@@ -1,0 +1,12 @@
+body {
+    font-family: '新宋体';
+    font-size: 16px;
+}
+
+/* 最精简的灰色背景调整 */
+:root {
+    --theme: #f5f5f5;
+    /* 整个页面背景改为浅灰 */
+    --entry: #dededede;
+    /* 文章卡片保持纯白（形成对比） */
+}

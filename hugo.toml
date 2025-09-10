@@ -1,0 +1,23 @@
+baseURL = "/"
+title = "博客"
+theme = "PaperMod"
+defaultContentLanguage = "zh"
+
+[params]
+hideSummary = true
+ShowToc = true     # 全局启用目录
+TocOpen = true     # 默认展开目录
+
+[params.homeInfoParams]
+disableFeatured = true # 关闭首页特色文章
+
+[params.assets]
+favicon = "/images/logo.jpg"
+
+[params.label]
+text = "博客"
+icon = "/images/logo.jpg"
+iconHeight = 35
+
+[markup.highlight]
+style = "github" # 直接使用GitHub官方主题

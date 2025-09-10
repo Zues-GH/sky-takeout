@@ -1,0 +1,117 @@
+:root {
+    --nav-width: 1380px;
+    --article-width: 650px;
+    --toc-width: 330px;
+}
+
+/* 目录容器基础样式 */
+.toc {
+    margin: 0 2.2px 44px 0;
+    border: 1.1px solid var(--border);
+    background: var(--entry);
+    border-radius: calc(var(--radius) * 1.1);
+    padding: 0.44em 0.44em 0.44em 0.3em;
+}
+
+/* 宽屏固定定位样式 */
+.toc-container.wide {
+    position: fixed;
+    right: 22px;
+    top: 110px;
+    width: var(--toc-width);
+    height: auto;
+    max-height: 88vh;
+    border-left: 1.1px solid var(--border);
+    background: var(--entry);
+    border-radius: calc(var(--radius) * 1.1);
+    padding: 0.88em 0.88em 0.88em 0.6em;
+    box-shadow: 0 2.2px 11px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.wide .toc {
+    position: static;
+    border: 1.1px solid var(--border);
+    background: var(--entry);
+    border-radius: calc(var(--radius) * 1.1);
+    width: 100%;
+    margin: 0;
+}
+
+/* 目录标题样式 */
+.toc details summary {
+    cursor: zoom-in;
+    margin-inline-start: 25px;
+    padding: 13.2px 0;
+    font-size: 1.21em;
+}
+
+.toc details[open] summary {
+    font-weight: 500;
+    font-size: 1.32em;
+}
+
+.toc-container.wide .toc .inner {
+    margin: 0;
+}
+
+/* 目录内容区域 */
+.toc .inner {
+    margin: 0 0 0 25px;
+    padding: 0px 16.5px 16.5px 25px;
+    font-size: 17.6px;
+    max-height: 91.3vh;
+    overflow-y: auto;
+}
+
+/* 滚动条样式 */
+.toc .inner::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border: 7.7px solid var(--theme);
+    border-radius: calc(var(--radius) * 1.1);
+}
+
+/* 列表项样式 */
+.toc li ul {
+    margin-inline-start: calc(var(--gap) * 0.88);
+    list-style-type: none;
+}
+
+.toc li {
+    list-style: none;
+    font-size: 1.045rem;
+    padding-bottom: 5.5px;
+    padding-left: 8px;
+}
+
+/* 激活状态样式 */
+.active {
+    color: #f22409;
+}
+
+.toc li a:hover {
+    color: var(--secondary);
+}
+
+/* 响应式设计 */
+@media (max-width: 1320px) {
+    .toc-container.wide {
+        position: static;
+        width: 100%;
+        max-height: none;
+        margin: 1.1rem 0;
+        right: auto;
+        border-left: none;
+    }
+
+    .toc details summary {
+        margin-inline-start: 18px;
+    }
+
+    .toc .inner {
+        margin: 0 0 0 18px;
+        padding: 0px 12px 12px 18px;
+        font-size: 16px;
+    }
+}
