@@ -12,6 +12,12 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
+    line-clamp: 3;
+    line-clamp: 3;
+    line-clamp: 3;
+    line-clamp: 3;
+    line-clamp: 3;
 }
 
 .first-entry .entry-header h1 {
@@ -65,6 +71,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
 }
 
 .entry-footer {

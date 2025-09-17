@@ -1,7 +1,7 @@
 +++
-draft = false
 title = 'Java'
 weight = 5
+categories = ["技术栈"]
 +++
 
 ## 技术栈

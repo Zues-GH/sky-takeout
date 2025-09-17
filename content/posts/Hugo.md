@@ -1,7 +1,7 @@
 +++
-draft = false
 title = 'Hugo'
 weight = 1
+categories = ["博客"]
 +++
 
 ## 常用命令
@@ -18,3 +18,7 @@ hugo server --gc
 
 ### 删除publice目录
 Remove-Item -Recurse -Force public
+
+### markdown配置
+[markup.goldmark.renderer]
+hardWraps = true # 启用markdown中回车即换行

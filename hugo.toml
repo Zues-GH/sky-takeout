@@ -1,23 +1,37 @@
 baseURL = "/"
 title = "博客"
 theme = "PaperMod"
-defaultContentLanguage = "zh"
+defaultContentLanguage = "zh" # 默认语言
+
+ignoreLogs = ['warning-goldmark-raw-html'] # 忽略goldmark的raw html警告
 
 [params]
-hideSummary = true
+hideSummary = true # 隐藏文章摘要
 ShowToc = true     # 全局启用目录
 TocOpen = true     # 默认展开目录
 
+# 关闭首页特色文章
 [params.homeInfoParams]
-disableFeatured = true # 关闭首页特色文章
+disableFeatured = true
 
+# 站点图标
 [params.assets]
 favicon = "/images/logo.jpg"
 
 [params.label]
-text = "博客"
+text = "Zeus"
 icon = "/images/logo.jpg"
 iconHeight = 35
 
+# 默认浅色模式高亮
 [markup.highlight]
-style = "github" # 直接使用GitHub官方主题
+style = "solarized-light"
+
+# 启用markdown中回车即换行
+[markup.goldmark.renderer]
+hardWraps = true
+
+# 启用分类页面
+[[menu.main]]
+name = "分类"
+url = "/categories/"

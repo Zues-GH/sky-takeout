@@ -1,7 +1,7 @@
 +++
-draft = false
 title = 'PaperMod'
 weight = 2
+categories = ["博客"]
 +++
 ## 参数配置
 ### 隐藏摘要和内容
